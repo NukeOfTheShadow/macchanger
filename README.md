@@ -1,4 +1,4 @@
-# macchanger for Debian / Raspbian
+# Macchanger for Debian distros.
 
 
 ### Preparation
