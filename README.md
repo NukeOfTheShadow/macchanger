@@ -12,11 +12,14 @@ All of these commands needs to be executed with root permissions. You either log
 
 1.) Run 'git clone https://github.com/NukeOfTheShadow/macchanger.git' to download the repository.
 
-2.) Run 'cp macchanger/macchanger.sh /etc/init.d/macchanger' to copy the script.
+2.) Run 'chmod +x macchanger.sh' so you can execute the script.
 
-3.) Run 'chmod +x /etc/init.d/macchanger' so you can execute the script.
+##### The following steps are optional and only required if you want to change the mac adress on every startup / reboot.
+##### If you want to change the mac adress manually you can just simply execute the script with the command 'bash macchanger.sh'
 
-4.) Run 'update-rc.d acchanger defaults' to add the script to autostart.
+3.) Run 'cp macchanger/macchanger.sh /etc/init.d/macchanger' to copy the script to the service folder.
+
+4.) Run 'update-rc.d macchanger defaults' to add the script to autostart.
 
 5.) Reboot.
 
