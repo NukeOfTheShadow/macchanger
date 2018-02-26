@@ -18,4 +18,4 @@
 5.) Reboot.
 
 6.) You should now have a new MAC-Adress on the given Interface.
-You can set the name of the interface in the macchanger script by changing the variable 'iface' to, for example, wlan0.
+You can set the name of the interface in the macchanger script by changing the variable 'ifaces' to, for example, wlan0. There is support for multiple interfaces also. So you can change the variable 'ifaces' to a comma-seperated list. For example 'eth0 wlan0' and so on.
