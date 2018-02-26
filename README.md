@@ -1,11 +1,11 @@
-### macchanger for Debian / Raspbian
+# macchanger for Debian / Raspbian
 
 
-# Preparation
+### Preparation
 
 1.) Install git and net-tools with the command 'apt install git net-tools' or 'apt-get install git net-tools'
 
-# Manual
+### Manual
 
 1.) Run 'git clone https://github.com/NukeOfTheShadow/macchanger.git' to download the repo.
 2.) Run 'cp macchanger/macchanger.sh /etc/init.d/macchanger' to copy the script.
