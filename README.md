@@ -10,7 +10,7 @@
 
 All of these commands needs to be executed with root permissions. You either log in as root or running all commands with 'sudo' at the beginning.
 
-1.) Run 'git clone https://github.com/NukeOfTheShadow/macchanger.git' to download the repo.
+1.) Run 'git clone https://github.com/NukeOfTheShadow/macchanger.git' to download the repository.
 
 2.) Run 'cp macchanger/macchanger.sh /etc/init.d/macchanger' to copy the script.
 
