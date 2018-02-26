@@ -12,7 +12,7 @@ All of these commands needs to be executed with root permissions. You either log
 
 1.) Run 'git clone https://github.com/NukeOfTheShadow/macchanger.git' to download the repository.
 
-2.) Run 'chmod +x macchanger.sh' so you can execute the script.
+2.) Run 'chmod +x macchanger/macchanger.sh' so you can execute the script.
 
 #### The following steps are optional and only required if you want to change the mac adress on every startup / reboot. If you want to change the mac adress manually you can just simply execute the script with the command 'bash macchanger.sh'
 
