@@ -9,7 +9,7 @@ ifconfig $iface down
 #generate random mac
 MACAddress=$(dd if=/dev/urandom bs=1024 count=1 2>/dev/null|md5sum|sed 's/^\(..\)\(..\)\(..\)\(..\)\(..\)\(..\).*$/00:\2:\3:\4:\5:\6/')
 
-#change mac
+#change mac on given interface
 ifconfig $iface hw ether $MACAddress
 
 #turn interface on again
