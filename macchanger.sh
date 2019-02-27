@@ -9,16 +9,19 @@ ifaces=(eth0)
 for iface in "${ifaces[@]}"; do
 
 	#shut down interface
-	ifconfig $iface down
+	#ifconfig $iface down
+	ip link set $iface down
 
 	#generate random mac
 	MACAddress=$(dd if=/dev/urandom bs=1024 count=1 2>/dev/null|md5sum|sed 's/^\(..\)\(..\)\(..\)\(..\)\(..\)\(..\).*$/00:\2:\3:\4:\5:\6/')
 
 	#change mac on given interface
-	ifconfig $iface hw ether $MACAddress
+	#ifconfig $iface hw ether $MACAddress
+	ip link set $iface address $MACAddress
 
 	#turn interface on again
-	ifconfig $iface up
+	#ifconfig $iface up
+	ip link set $iface up
 
 done
 
